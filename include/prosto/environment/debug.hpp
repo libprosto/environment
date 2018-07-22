@@ -16,24 +16,20 @@
 \* ************************************************************************* */
 
 /*!
- * \file   debug.hpp
  * \author michail peterlis
- * \brief  defines some debug macros.
+ * \brief  debug macros definitions
  * ************************************************************************* */
 
 
-#ifndef PROSTO_DEBUG_H
-#define PROSTO_DEBUG_H
+#ifndef PROSTO_DEBUG_HPP
+#define PROSTO_DEBUG_HPP
 
 
-//! \example environment.cpp
-
-/*! \def PROSTO_DEBUG should be defined in debug mode. it's used for different debug modes
+/*! \def PROSTO_DEBUG should be defined in debug mode. It's used for different debug modes
  *  in the library.
  *
- *  \def PROSTO_PSEUDO_DEBUG is used for pseudo debuging :). pseudo debug is mostly used as
- *  an additional debug layer in release mode, but it has no real debug elements
- *  like breakpoints/debugpoits in the code.
+ *  \def PROSTO_PSEUDO_DEBUG is used for pseudo debuging :). Pseudo debug is mostly used as
+ *  an additional debug layer while the compilation is done without debug information.
  */
 
 #if defined(_DEBUG) || defined(DEBUG)
@@ -69,4 +65,4 @@
 #  define PROSTO_PSEUDO_DEBUG_CATCH_PRINT_THROW
 #endif
 
-#endif // PROSTO_DEBUG_H
+#endif // PROSTO_DEBUG_HPP

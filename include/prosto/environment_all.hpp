@@ -16,20 +16,15 @@
 \* ************************************************************************* */
 
 /*!
- * \file   environment.h
  * \author michail peterlis
  * \brief  includer for all prosto environment relevant headers.
  * ************************************************************************* */
 
 
-#ifndef PROSTO_ENVIRONMENT_ALL_H
-#define PROSTO_ENVIRONMENT_ALL_H
+#ifndef PROSTO_ENVIRONMENT_ALL_HPP
+#define PROSTO_ENVIRONMENT_ALL_HPP
 
 
 #include "environment/debug.hpp"
-#include "environment/architecture.hpp"
-#include "environment/compiler_specialization.hpp"
-#include "environment/attributes.hpp"
-#include "environment/stringify.hpp"
 
-#endif // PROSTO_ENVIRONMENT_ALL_H
+#endif // PROSTO_ENVIRONMENT_ALL_HPP
