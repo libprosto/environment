@@ -17,7 +17,7 @@
 
 /*!
  * \author michail peterlis
- * \brief  includer for all prosto environment relevant headers.
+ * \brief  Includer for all prosto environment relevant headers.
  * ************************************************************************* */
 
 

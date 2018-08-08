@@ -17,7 +17,7 @@
 
 /*!
  * \author michail peterlis
- * \brief  debug macros definitions
+ * \brief  Debug macros definitions
  * ************************************************************************* */
 
 
@@ -42,27 +42,6 @@
 
 #if defined(PROSTO_DEBUG)
 #  define PROSTO_PSEUDO_DEBUG 1
-#endif
-
-
-#if defined(PROSTO_PSEUDO_DEBUG)
-
-#  define PROSTO_PSEUDO_DEBUG_TRY try
-
-#  define PROSTO_PSEUDO_DEBUG_CATCH_PRINT_THROW               \
-    catch(std::exception const& e) {                          \
-      using namespace prosto;                                 \
-      std::cerr << e << std::endl;                            \
-      throw;                                                  \
-    }                                                         \
-    catch(...) {                                              \
-      std::cerr << "catched unknown exception" << std::endl;  \
-      throw;                                                  \
-    }
-
-#else
-#  define PROSTO_PSEUDO_DEBUG_TRY
-#  define PROSTO_PSEUDO_DEBUG_CATCH_PRINT_THROW
 #endif
 
 #endif // PROSTO_DEBUG_HPP
